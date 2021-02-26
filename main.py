@@ -1,11 +1,13 @@
 #!/usr/bin/python3
 
+import telebot
 import requests
 import lxml
 import time
 import sys
 
-from datetime import datetime
+TOKEN = '<token string>'
+# tb = telebot.TeleBot(TOKEN)
 
 store = 'https://www.playstation.com/en-us/ps-plus/this-month-on-ps-plus/'
 container = '//*[contains(@class, "text-block")]/text()'
