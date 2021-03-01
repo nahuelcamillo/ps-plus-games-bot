@@ -10,17 +10,15 @@ import sys
 from lxml import html
 from datetime import datetime
 
-TOKEN = '1437994990:AAHTvf7dKhW3Zpw2MPs6zFB-ixdN9N_mUXY'
-tb = telebot.TeleBot(TOKEN)
-myIdBot = '235320816'
-
 url = 'https://www.playstation.com/en-us/ps-plus/this-month-on-ps-plus/'
 container = "//div/h3/text()"
 link = '//*[contains(@class, "buttonblock")]//a/@href'
 
 def main():
     
-    bot_token = TOKEN
+    bot_token = sys.argv[1]
+    recipients = sys.argv[2]
+    print(recipients)
 
     results = []
     games = []
@@ -36,8 +34,7 @@ def main():
 
     print(message)
 
-    # telegram_bot_sendtext(message, bot_token, recipients)
-    telegram_bot_sendtextOwn(message, bot_token)
+    telegram_bot_sendtext(message, bot_token, recipients)
 
 def scrapping():
     items = []
@@ -52,17 +49,12 @@ def scrapping():
 
     return { "items": items, "links": links }
 
-# def telegram_bot_sendtext(bot_message, bot_token, recipients):
-#     for bot_chatID in recipients:
-#         send_text = 'https://api.telegram.org/bot' + bot_token + '/sendMessage?chat_id=' + bot_chatID + '&parse_mode=Markdown&text=' + bot_message
-#         response = requests.get(send_text)
-#         print(response.json())
-
-def telegram_bot_sendtextOwn(bot_message, bot_token):
-    bot_chatID = '235320816'
-    send_text = 'https://api.telegram.org/bot' + bot_token + '/sendMessage?chat_id=' + bot_chatID + '&parse_mode=Markdown&text=' + bot_message
-    response = requests.get(send_text)
-    print(response.json())
+def telegram_bot_sendtext(bot_message, bot_token, recipients):
+    # for bot_chatID in recipients:
+        bot_chatID = recipients
+        send_text = 'https://api.telegram.org/bot' + bot_token + '/sendMessage?chat_id=' + bot_chatID + '&parse_mode=Markdown&text=' + bot_message
+        response = requests.get(send_text)
+        print(response.json())
 
 if __name__ == '__main__':
     main()
