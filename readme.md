@@ -8,10 +8,10 @@ _Telegram bot to be notified of new PS Plus Games of the month_
 
 ```
 #Install dependencies
-...
+$ brew install python3
 
 #Run
-...
+python3 main.py <TELEGRAM_BOT_TOKEN> <TELEGRAM_RECIPIENTS_CHAT_IDS>
 
 ```
 
