@@ -17,7 +17,7 @@ _Telegram bot to be notified of new PS Plus Games of the month_
 
 ## Example
 
-![](https://ibb.co/jLWZ5xL)
+![](https://i.ibb.co/JzyFdbz/Captura-de-Pantalla-2021-02-28-a-la-s-10-58-35-p-m.png)
 
 ## Built with 🛠️
 
