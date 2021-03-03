@@ -17,6 +17,10 @@ python3 main.py <TELEGRAM_BOT_TOKEN> <TELEGRAM_RECIPIENTS_CHAT_IDS>
 
 ## Example
 
+```
+python3 main.py 1234567890:AAbbCCDDeeFFggHHiijjKKllMMnnOOppQQ '["123456789","987654321"]'
+```
+
 ![](https://i.ibb.co/JzyFdbz/Captura-de-Pantalla-2021-02-28-a-la-s-10-58-35-p-m.png)
 
 ## Built with 🛠️
