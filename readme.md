@@ -21,7 +21,7 @@ python3 main.py <TELEGRAM_BOT_TOKEN> <TELEGRAM_RECIPIENTS_CHAT_IDS>
 python3 main.py 1234567890:AAbbCCDDeeFFggHHiijjKKllMMnnOOppQQ '["123456789","987654321"]'
 ```
 
-![](https://i.ibb.co/JzyFdbz/Captura-de-Pantalla-2021-02-28-a-la-s-10-58-35-p-m.png)
+![](https://i.ibb.co/Lvgq52r/Captura-de-Pantalla-2021-03-09-a-la-s-8-09-41-p-m.png)
 
 ## Built with 🛠️
 
@@ -37,6 +37,8 @@ See also the list of [contributors](https://github.com/) who participated in thi
 ## Acknowledgments 🎁
 
 * Invite a beer 🍻 or a coffee ☕️. 
+    * Send BEP20 tokens to this address: 0xC2417e9b68c131fd0d4020714662A073d69f84CF
+    
 * Thanks for sharing! 📢
 
 ---
