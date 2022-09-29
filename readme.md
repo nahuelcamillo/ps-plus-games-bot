@@ -32,8 +32,6 @@ python3 main.py 1234567890:AAbbCCDDeeFFggHHiijjKKllMMnnOOppQQ '["123456789","987
 
 * **Nahuel Camillo** - [nahuelcamillo](https://github.com/nahuelcamillo)
 
-See also the list of [contributors](https://github.com/) who participated in this project
-
 ## Acknowledgments 🎁
 
 * Invite a beer 🍻 or a coffee ☕️. 
